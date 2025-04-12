@@ -1,0 +1,47 @@
+.form-section {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.491);
+    padding: 50px 40px;
+    border-radius: 15px;
+}
+.form input, textarea{
+    color: white;
+    width: 400px;
+    height: 30px;
+    border: 1px solid #fff;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    background: none;
+}
+.form button {
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    background: #e12626;
+    padding: 10px 30px;
+    border-radius: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.social-links {
+    margin: 20px;
+    text-align: center;
+}
+.social-links a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #e12626;
+    margin: 5px;
+}
+.social-links i:hover {
+    color: #fff;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}   

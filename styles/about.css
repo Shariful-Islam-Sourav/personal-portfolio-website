@@ -1,0 +1,9 @@
+.about-section {
+    width: 80%;
+}
+
+.about-section > p > a {
+    text-decoration: none;
+    color: #e12626;
+    font-size: 20px;
+}
