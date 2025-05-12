@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/contact.css" />
     <script
@@ -25,56 +25,68 @@
       </nav>
     </header>
 
-    <!-- Contact Section -->
-    <section class="form-section">
-      <div class="form">
-        <h2 class="hero-text">Contact Me</h2>
-        <p>Let's get in touch! Fill out the form below or contact my social.</p>
-
-        <!-- Contact Form -->
-
-        <form class="contact-form">
+    <main>
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm" novalidate>
+          <label for="name">Name:</label>
           <input
             type="text"
             id="name"
             name="name"
-            placeholder="Your Name"
+            placeholder="Enter your name"
             required
           />
-          <br />
+
+          <label for="email">Email:</label>
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Enter your email"
             required
           />
-          <br />
+
+          <label for="message">Message:</label>
           <textarea
             id="message"
             name="message"
-            placeholder="Your Message"
-            rows="5"
+            placeholder="Enter your message"
             required
           ></textarea>
-          <br />
-          <button type="submit" class="submit-btn">Send Message</button>
+
+          <div id="error-message"></div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-      </div>
-    </section>
+      </section>
+    </main>
+
     <!-- Social Media Links -->
     <div class="social-links">
       <h3>Connect with Me</h3>
-      <a href="https://www.linkedin.com/in/sharifulislamsourav/" target="_blank" class="social-icon"
+      <a
+        href="https://www.linkedin.com/in/sharifulislamsourav/"
+        target="_blank"
+        class="social-icon"
         ><i class="fa-brands fa-linkedin"></i
       ></a>
-      <a href="https://github.com/Shariful-Islam-Sourav" target="_blank" class="social-icon"
+      <a
+        href="https://github.com/Shariful-Islam-Sourav"
+        target="_blank"
+        class="social-icon"
         ><i class="fa-brands fa-github"></i
       ></a>
-      <a href="https://www.facebook.com/shariful.islam.sourav.661597/" target="_blank" class="social-icon"
+      <a
+        href="https://www.facebook.com/shariful.islam.sourav.661597/"
+        target="_blank"
+        class="social-icon"
         ><i class="fa-brands fa-facebook"></i
       ></a>
-      <a href="https://discord.com/channels/@me/813420487472447498"><i class="fa-brands fa-discord"></i></a>
+      <a href="https://discord.com/channels/@me/813420487472447498"
+        ><i class="fa-brands fa-discord"></i
+      ></a>
     </div>
+    <script src="/js/script.js"></script>
   </body>
 </html>
