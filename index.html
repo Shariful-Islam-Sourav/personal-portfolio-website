@@ -12,21 +12,34 @@
     <!------------------------Header Section------------------------->
     <header>
         <nav>
-            <h2>&lt;STEALTH/&gt;</h2>   
-            <ul>
+            <h2>&lt;STEALTH/&gt;</h2>
+            <button id="darkModeToggle" aria-label="Toggle light mode" style="margin-left:20px;">
+              <i class="fa-solid fa-sun"></i>
+            </button>
+            <button class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about.html">About</a></li>
                 <li><a href="/projects.html">Projects</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
+            
         </nav>
     </header>
     <main>
-        <!------------------Projects Section----------------------------------->
-        <section class="flex-dual">
+        <!------------------Hero Section----------------------------------->
+        <section class="flex-dual animate-on-scroll">
         <div class="text-sec">
             <p class="wlc-text">Welcome to my Portfolio <i class="fa-duotone fa-regular fa-star"></i></p>
             <h2 class="hero-text">I am <span class="sub-text">Stealth.</span></h2>
+            <p id="greeting" style="font-size:1.2em; margin: 10px 0;">
+              <span id="greeting-text"></span>
+              <span id="greeting-time" style="margin-left:10px; font-size:0.9em; color:#e12626;"></span>
+            </p>
             <h3>Programmer, Problem Solver, Developer.</h3>
             <p>I love programming, problem solving and putting these <br>together to Develop products and Solutions.</p>
             <a class="btn btn-primary" href="/projects.html">Explore Projects <span class="arr">→</span></a>
@@ -37,6 +50,14 @@
         </div> 
     </section>
     </main>
-       
+    <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+       <script src="/js/script.js"></script>
+       <script>
+      tippy('#backToTop', {
+        content: 'Scroll effect can be seen in the projects page',
+      });
+    </script>
 </body>
 </html>

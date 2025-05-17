@@ -1,78 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/projects.css">
-    <script src="https://kit.fontawesome.com/822e627804.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <script
+      src="https://kit.fontawesome.com/822e627804.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Personal Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!------------------------Header Section------------------------->
     <header>
-        <nav>
-            <h2>&lt;STEALTH/&gt;</h2>   
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/projects.html">Projects</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h2>&lt;STEALTH/&gt;</h2>
+        <button
+          id="darkModeToggle"
+          aria-label="Toggle light mode"
+          style="margin-left: 20px"
+        >
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-    <!------------------Projects Section----------------------------------->
-    <section class="projects">
+      <!------------------Projects Section----------------------------------->
+      <section class="projects">
         <h1 class="hero-text">Projects</h1>
         <div class="project-cards">
-           <div class="card">
-            <img src="/images/project-1.png" alt="project-image">
+          <div class="card animate-on-scroll">
+            <img src="/images/project-1.png" alt="project-image" />
             <h2>Dialab Diagnosis Application</h2>
             <p>A MERN Stack Web Application for Diagnostic Centre</p>
-            <a href="https://github.com/Shariful-Islam-Sourav/diaLab-react-firebase-app" target="_blank">Code</a>
+            <a
+              href="https://github.com/Shariful-Islam-Sourav/diaLab-react-firebase-app"
+              target="_blank"
+              >Code</a
+            >
             <a href="https://dia-lab.web.app/" target="_blank">Live</a>
-        </div>
-        <div class="card">
-            <img src="/images/project-2.png" alt="project-image">
+          </div>
+          <div class="card animate-on-scroll">
+            <img src="/images/project-2.png" alt="project-image" />
             <h2>Book Archive Finder Application</h2>
             <p>A Book Searching Web Application using API</p>
-            <a href="https://github.com/Shariful-Islam-Sourav/book-archive-js" target="_blank">Code</a>
-            <a href="https://ourbookslibrary.netlify.app/" target="_blank">Live</a>
-        </div>
-        <div class="card">
-            <img src="/images/project-3.png" alt="project-image">
+            <a
+              href="https://github.com/Shariful-Islam-Sourav/book-archive-js"
+              target="_blank"
+              >Code</a
+            >
+            <a href="https://ourbookslibrary.netlify.app/" target="_blank"
+              >Live</a
+            >
+          </div>
+          <div class="card animate-on-scroll">
+            <img src="/images/project-3.png" alt="project-image" />
             <h2>Simple React SPA Properties Website</h2>
             <p>A react single page application for buying properties</p>
-            <a href="https://github.com/Shariful-Islam-Sourav/landers-react-app" target="_blank">Code</a>
-            <a href="https://landers-react.netlify.app/" target="_blank">Live</a>
-        </div>
-        <div class="card">
-            <img src="/images/project-4.png" alt="project-image">
+            <a
+              href="https://github.com/Shariful-Islam-Sourav/landers-react-app"
+              target="_blank"
+              >Code</a
+            >
+            <a href="https://landers-react.netlify.app/" target="_blank"
+              >Live</a
+            >
+          </div>
+          <div class="card animate-on-scroll">
+            <img src="/images/project-4.png" alt="project-image" />
             <h2>Product Cart Management Page</h2>
-            <p>Product variant cart management and final checkout price using JS</p>
-            <a href="https://github.com/Shariful-Islam-Sourav/cart-js" target="_blank">Code</a>
-            <a href="https://shariful-islam-sourav.github.io/cart-js/" target="_blank">Live</a>
-        </div>
-        <div class="card">
-            <img src="/images/project-5.png" alt="project-image">
+            <p>
+              Product variant cart management and final checkout price using JS
+            </p>
+            <a
+              href="https://github.com/Shariful-Islam-Sourav/cart-js"
+              target="_blank"
+              >Code</a
+            >
+            <a
+              href="https://shariful-islam-sourav.github.io/cart-js/"
+              target="_blank"
+              >Live</a
+            >
+          </div>
+          <div class="card animate-on-scroll">
+            <img src="/images/project-5.png" alt="project-image" />
             <h2>Football Mania Application</h2>
             <p>Simple HTML CSS website to watch live matches and events.</p>
-            <a href="https://github.com/Shariful-Islam-Sourav/football-mania" target="_blank">Code</a>
-            <a href="https://shariful-islam-sourav.github.io/football-mania/" target="_blank">Live</a>
-        </div>
-        <div class="card">
-            <img src="/images/project-6.png" alt="project-image">
+            <a
+              href="https://github.com/Shariful-Islam-Sourav/football-mania"
+              target="_blank"
+              >Code</a
+            >
+            <a
+              href="https://shariful-islam-sourav.github.io/football-mania/"
+              target="_blank"
+              >Live</a
+            >
+          </div>
+          <div class="card animate-on-scroll">
+            <img src="/images/project-6.png" alt="project-image" />
             <h2>Honda Shop Design Website</h2>
             <p>A Simple SPA HTML CSS Website for Bike Shop</p>
-            <a href="https://github.com/Shariful-Islam-Sourav/honda-shop" target="_blank">Code</a>
-            <a href="https://shariful-islam-sourav.github.io/honda-shop/" target="_blank">Live</a>
+            <a
+              href="https://github.com/Shariful-Islam-Sourav/honda-shop"
+              target="_blank"
+              >Code</a
+            >
+            <a
+              href="https://shariful-islam-sourav.github.io/honda-shop/"
+              target="_blank"
+              >Live</a
+            >
+          </div>
         </div>
-        </div>
-        
-    </section>
+      </section>
     </main>
-   
-    
-</body>
+    <!-- Back to Top Button -->
+    <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+  <script src="/js/script.js"></script>
 </html>
